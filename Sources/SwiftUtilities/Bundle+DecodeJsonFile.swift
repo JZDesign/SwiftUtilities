@@ -3,6 +3,12 @@ import Combine
 
 
 public extension Bundle {
+    
+    ///
+    /// - Parameters:
+    ///   - type: Decodable
+    ///   - file: File name exlcuding the json file type: If the file is "123.json" pass "123" in.
+    /// - Returns: A publisher of the decoded type or a failing publisher
     func decodeJsonFile<T: Decodable>(_ type: T.Type, from file: String) -> AnyPublisher<T, Error> {
 
         guard let path = self.path(forResource: file, ofType: "json"),

@@ -44,12 +44,15 @@ public func ???<T>(_ left: Optional<T>, right: Error) throws -> T {
 }
 
 
+/// Runs the passed function on the main thread
+/// - Parameter execute: A function to execute on the main thread
 public func onMain(_ execute: @escaping () -> Void) {
     DispatchQueue.main.async { execute() }
 }
 
 
 public extension Decimal {
+    /// Converts a decimal to a string formatted as dollars and cents
     func dollarFormat() -> String {
         return isPositive() ? toDollarsAndCents() : (-self).toDollarsAndCents()
     }
@@ -71,6 +74,9 @@ fileprivate extension Decimal {
 
 
 public extension Publisher {
+    
+    /// Erases the Output of your publisher to Void
+    /// - Returns: An empty publisher.
     func eraseToEmptyPublisher() -> AnyPublisher<Void, Failure> {
         map { _ in return }.eraseToAnyPublisher()
     }
@@ -78,6 +84,10 @@ public extension Publisher {
 
 
 public extension Optional {
+    
+    ///
+    /// - Parameter error: The error to throw if the wrapped value is nil
+    /// - Returns: A publisher that contains the unwrapped value or the thrown error
     func unwrapToPublisher(orThrow error: Error) -> AnyPublisher<Wrapped, Error> {
         Just(self)
             .tryMap { try $0 ??? error }
