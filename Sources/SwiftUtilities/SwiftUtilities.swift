@@ -53,11 +53,6 @@ public extension Decimal {
     func dollarFormat() -> String {
         return isPositive() ? toDollarsAndCents() : (-self).toDollarsAndCents()
     }
-
-    func dollarFormatPrependingPlusOrMinus() -> String {
-        let symbol = isPositive() ? "+" : "-"
-        return symbol + dollarFormat()
-    }
 }
 
 
@@ -77,7 +72,7 @@ fileprivate extension Decimal {
 
 public extension Publisher {
     func eraseToEmptyPublisher() -> AnyPublisher<Void, Failure> {
-        map { _ in  return }.eraseToAnyPublisher()
+        map { _ in return }.eraseToAnyPublisher()
     }
 }
 
