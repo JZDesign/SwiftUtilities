@@ -1,0 +1,152 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/runner/work/SwiftUtilities/SwiftUtilities/Sources/SwiftUtilities/Atomic.swift",
+      "line": 30,
+      "symbol": "Atomic.init(wrappedValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftUtilities/SwiftUtilities/Sources/SwiftUtilities/Environment.swift",
+      "line": 3,
+      "symbol": "Environment",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftUtilities/SwiftUtilities/Sources/SwiftUtilities/Environment.swift",
+      "line": 4,
+      "symbol": "Environment.prod",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftUtilities/SwiftUtilities/Sources/SwiftUtilities/Environment.swift",
+      "line": 5,
+      "symbol": "Environment.qa",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftUtilities/SwiftUtilities/Sources/SwiftUtilities/Environment.swift",
+      "line": 6,
+      "symbol": "Environment.test",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftUtilities/SwiftUtilities/Sources/SwiftUtilities/Environment.swift",
+      "line": 8,
+      "symbol": "Environment.key",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftUtilities/SwiftUtilities/Sources/SwiftUtilities/Presenter.swift",
+      "line": 4,
+      "symbol": "SimplePresenter",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftUtilities/SwiftUtilities/Sources/SwiftUtilities/Presenter.swift",
+      "line": 5,
+      "symbol": "SimplePresenter.baseView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftUtilities/SwiftUtilities/Sources/SwiftUtilities/Presenter.swift",
+      "line": 6,
+      "symbol": "SimplePresenter.tasks",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftUtilities/SwiftUtilities/Sources/SwiftUtilities/Presenter.swift",
+      "line": 8,
+      "symbol": "SimplePresenter.init(view:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftUtilities/SwiftUtilities/Sources/SwiftUtilities/Presenter.swift",
+      "line": 13,
+      "symbol": "PresenterInterface",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftUtilities/SwiftUtilities/Sources/SwiftUtilities/Presenter.swift",
+      "line": 14,
+      "symbol": "PresenterInterface.baseView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftUtilities/SwiftUtilities/Sources/SwiftUtilities/Presenter.swift",
+      "line": 15,
+      "symbol": "PresenterInterface.tasks",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftUtilities/SwiftUtilities/Sources/SwiftUtilities/Presenter.swift",
+      "line": 18,
+      "symbol": "PresenterInterface",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftUtilities/SwiftUtilities/Sources/SwiftUtilities/Presenter.swift",
+      "line": 20,
+      "symbol": "PresenterInterface.perform(background:foreground:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftUtilities/SwiftUtilities/Sources/SwiftUtilities/Presenter.swift",
+      "line": 27,
+      "symbol": "PresenterInterface.perform(background:foreground:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftUtilities/SwiftUtilities/Sources/SwiftUtilities/Presenter.swift",
+      "line": 43,
+      "symbol": "Presentable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftUtilities/SwiftUtilities/Sources/SwiftUtilities/Presenter.swift",
+      "line": 44,
+      "symbol": "Presentable.screenId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftUtilities/SwiftUtilities/Sources/SwiftUtilities/Presenter.swift",
+      "line": 45,
+      "symbol": "Presentable.onError(error:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftUtilities/SwiftUtilities/Sources/SwiftUtilities/Presenter.swift",
+      "line": 48,
+      "symbol": "Presentable",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftUtilities/SwiftUtilities/Sources/SwiftUtilities/Presenter.swift",
+      "line": 49,
+      "symbol": "Presentable.screenId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/runner/work/SwiftUtilities/SwiftUtilities"
+}
