@@ -1,23 +1,31 @@
 import Combine
 import Foundation
 
-open class Presenter {
-    private let baseView: Presentable
-    internal var tasks: [AnyCancellable] = []
+open class Presenter: PresenterInterface {
+    public var baseView: Presentable
+    public var tasks: [AnyCancellable] = []
     
-    public init(view: Presentable) {
+    required public init(view: Presentable) {
         self.baseView = view
     }
-    
+}
+
+public protocol PresenterInterface {
+    init(view: Presentable)
+    var baseView: Presentable { get set }
+    var tasks: [AnyCancellable] { get set }
+}
+
+public extension PresenterInterface {
     @discardableResult
-    public func perform<T>(background: @escaping () -> T, foreground: @escaping (T) -> Void = { _ in }) -> AnyCancellable {
+    func perform<T>(background: @escaping () -> T, foreground: @escaping (T) -> Void = { _ in }) -> AnyCancellable {
         return Deferred { Just(background()) }
             .subscribe(on: DispatchQueue.global())
             .receive(on: DispatchQueue.main)
             .sink(receiveValue: foreground)
     }
     
-    public func perform<T>(background: AnyPublisher<T, Error>, foreground: @escaping (T) -> Void = { _ in }) -> AnyCancellable {
+    func perform<T>(background: AnyPublisher<T, Error>, foreground: @escaping (T) -> Void = { _ in }) -> AnyCancellable {
         return background
             .subscribe(on: DispatchQueue.global())
             .receive(on: DispatchQueue.main)
@@ -30,6 +38,7 @@ open class Presenter {
                 }
             }, receiveValue: foreground)
     }
+    
 }
 
 public protocol Presentable {
