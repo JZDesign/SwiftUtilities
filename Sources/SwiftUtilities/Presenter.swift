@@ -1,17 +1,16 @@
 import Combine
 import Foundation
 
-open class Presenter: PresenterInterface {
+open class SimplePresenter: PresenterInterface {
     public var baseView: Presentable
     public var tasks: [AnyCancellable] = []
     
-    required public init(view: Presentable) {
+    public init(view: Presentable) {
         self.baseView = view
     }
 }
 
 public protocol PresenterInterface {
-    init(view: Presentable)
     var baseView: Presentable { get set }
     var tasks: [AnyCancellable] { get set }
 }
